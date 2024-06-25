@@ -1,0 +1,111 @@
+.list-footwear-container {
+  background-image: url('https://img.freepik.com/premium-photo/stylish-black-boots-men-wooden-background_255667-6708.jpg?w=900');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.filters label {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.filters h4 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  background-color: #f2f2f2; /* Light grey background for the card */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; /* Adds some bottom margin for spacing */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .card-img-top {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-body {
+  background-color: #fff; /* White background for card body */
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-weight: bold; /* Bold title for the card model */
+  color: #333; /* Darker color for the title */
+}
+
+.card-price {
+  color: #666; /* Light grey color for the price */
+  font-size: 16px; /* Font size for the price */
+}
+
+.view-button {
+  background-color: #2c3ddb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #1a1e2a;
+}
+
+.disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+  pointer-events: none; /* Prevents interaction with disabled cards */
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls .btn {
+  margin: 0 5px;
+}
+
+.quantity-controls .quantity {
+  min-width: 30px;
+  text-align: center;
+}
+
+.disabled-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.disabled-overlay-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+}
